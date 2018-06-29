@@ -644,7 +644,7 @@ GEM
       actionpack (> 4, < 5.2)
       activemodel (> 4, < 5.2)
     slop (4.6.2)
-    solr_wrapper (1.2.0)
+    solr_wrapper (2.0.0)
       faraday
       retriable
       ruby-progressbar
@@ -734,7 +734,7 @@ DEPENDENCIES
   rsolr (>= 1.0)
   rspec-rails
   sass-rails (~> 5.0)
-  solr_wrapper (>= 0.3)
+  solr_wrapper (~> 2.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
