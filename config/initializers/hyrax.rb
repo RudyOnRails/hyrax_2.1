@@ -219,6 +219,11 @@ Hyrax.config do |config|
   # mount point.
   #
   # config.whitelisted_ingest_dirs = []
+
+  # Adding a new middleware
+  # https://github.com/samvera/hyrax/wiki/Customizing-Actors
+  Hyrax::CurationConcern.actor_factory.insert_after Hyrax::Actors::FeaturedWorkActor, Hyrax::Actors::UpcaseActor
+
 end
 
 Date::DATE_FORMATS[:standard] = "%m/%d/%Y"
